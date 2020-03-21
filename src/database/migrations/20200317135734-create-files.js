@@ -2,10 +2,10 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('files', {
       id: {
-        type: Sequelize.INTEGER, //
-        allowNull: false, // não vai permitir null
-        autoIncrement: true, // Ela é auto incremental
-        primarykey: true, // chave primaria
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
       },
       name: {
         type: Sequelize.STRING,
